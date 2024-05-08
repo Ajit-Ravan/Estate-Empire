@@ -2,7 +2,7 @@
   color: white;
   position: relative;
   padding-bottom: 2rem;
-  background-color: black;
+  /* background-color: black; */
 }
 
 .extra-container {
@@ -26,6 +26,7 @@
   width: 30rem;
   height: 35rem;
   overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
 }
 .image-container > img {
   width: 100%;
@@ -58,7 +59,7 @@
   background-color: lightgray;
 }
 
-.stat {
+.stats {
   width: 100%;
   justify-content: space-between;
 }

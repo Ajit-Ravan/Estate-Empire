@@ -88,7 +88,7 @@ a {
   font-weight: 500;
   padding: 0.6rem 1.4rem;
   color: rgb(255, 255, 255);
-  background-color: rgb(12, 133, 147);
+  background-color: rgb(92, 217, 231);
   border: none;
   border-radius: 4px;
   transition: all 300ms ease-in;
@@ -97,6 +97,7 @@ a {
 .button:hover {
   cursor: pointer;
   transform: scale(1.1);
+  color: #131110;
 }
 
 /* media queries */

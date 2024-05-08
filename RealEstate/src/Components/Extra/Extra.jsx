@@ -28,7 +28,7 @@ function Extra() {
             <input type="text" />
             <button className="button">Search</button>
           </div>
-          <div className="flexCenter stat">
+          <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
                 <CountUp start={3589} end={9000} duration={2} />
