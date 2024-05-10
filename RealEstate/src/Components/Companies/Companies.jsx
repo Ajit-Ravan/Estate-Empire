@@ -1,7 +1,7 @@
 import React from "react";
-import "./Container.css";
+import "./Companies.css";
 
-const Container = () => {
+const Companies = () => {
   return (
     <section className="paddings innerWidth flexCenter c-container">
       <img src="./eq.png" alt="" />
@@ -12,4 +12,4 @@ const Container = () => {
   );
 };
 
-export default Container;
+export default Companies;
