@@ -4,6 +4,10 @@ import Header from "./Components/Header/Header";
 import Extra from "./Components/Extra/Extra";
 import Residencies from "./Components/Residencies/Residencies";
 import Companies from "./Components/Companies/Companies";
+import Value from "./Components/Value/Value";
+import Contact from "./Components/Contact/Contact";
+import GetStarted from "./Components/GetStarted/GetStarted";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,6 +21,10 @@ function App() {
         </div>
         <Companies />
         <Residencies />
+        <Value />
+        <Contact />
+        <GetStarted />
+        <Footer />
       </div>
     </>
   );
