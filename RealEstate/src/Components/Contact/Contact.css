@@ -10,7 +10,9 @@
 .c-left {
   gap: 0.5rem;
 }
-
+.mode:hover {
+  background-color: rgb(180, 218, 242);
+}
 .contactModes .row {
   gap: 1.5px;
 }
@@ -58,4 +60,19 @@
   .row {
     flex-direction: column;
   }
+}
+
+@media (max-width: 1024px) {
+  .c-container {
+    flex-direction: column;
+  }
+  .c-right {
+    justify-content: center;
+  }
+  .row {
+    flex-direction: column;
+  }
+  /* .mode{
+  width: 100%;
+} */
 }

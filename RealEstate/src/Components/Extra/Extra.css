@@ -3,10 +3,11 @@
   position: relative;
   padding-bottom: 2rem;
   /* background-color: black; */
+  z-index: 1;
 }
 
 .extra-container {
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-end;
 }
 .extra-left {
@@ -33,13 +34,13 @@
   height: 100%;
 }
 .blue-circle {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   background-color: rgb(92, 217, 231);
   position: absolute;
   border-radius: 999px;
-  right: 44%;
-  top: -15%;
+  right: 57%;
+  top: -4%;
   z-index: -1;
 }
 .search-bar {
@@ -68,4 +69,61 @@
 }
 .stat > :nth-child(1) > :last-child {
   color: orange;
+}
+.image-container {
+  width: 30rem;
+  height: 35rem;
+  overflow: hidden;
+  border-radius: 15rem 15rem 0 0;
+  /* border: 8px solid rgba(183, 181, 192); */
+}
+.image-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: -4px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 640px) {
+  .hero-container {
+    margin-top: 2rem;
+  }
+  .extra-title > h1 {
+    z-index: -2;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .image-container {
+    width: 95%;
+    height: 25rem;
+  }
+  .stats {
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .extra-right {
+    width: 100%;
+  }
+  .stat > :nth-child(1) {
+    font-size: 1.5rem;
+  }
+  .stat > :nth-last-child(2) {
+    font-size: 0.8rem;
+  }
+  .blue-circle {
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(92, 217, 231);
+    position: absolute;
+    border-radius: 999px;
+    right: 40%;
+    top: -8%;
+    z-index: -1;
+  }
 }

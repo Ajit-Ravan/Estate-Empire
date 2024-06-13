@@ -2,6 +2,7 @@ import React from "react";
 import "./Extra.css";
 import { HiLocationMarker } from "react-icons/hi";
 import CountUp from "react-countup";
+import { motion } from "framer-motion";
 
 function Extra() {
   return (
@@ -10,9 +11,13 @@ function Extra() {
         <div className="flextColStart extra-left">
           <div className="extra-title">
             <div className="blue-circle"></div>
-            <h1>
+            <motion.h1
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 4, tyep: "ease-in" }}
+            >
               Discover <br /> Most Perfect <br /> Property
-            </h1>
+            </motion.h1>
           </div>
           <div className="flexColStart extra-des">
             <span className="secondaryText">
@@ -24,21 +29,24 @@ function Extra() {
             </span>
           </div>
           <div className="flexCenter search-bar">
-            <HiLocationMarker color="cyan" size={25}></HiLocationMarker>
+            <HiLocationMarker
+              color="rgb(92, 217, 231)"
+              size={25}
+            ></HiLocationMarker>
             <input type="text" />
             <button className="button">Search</button>
           </div>
           <div className="flexCenter stats">
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={3589} end={9000} duration={2} />
+                <CountUp start={3589} end={9000} duration={3} />
                 <span>+</span>
               </span>
               <span className="secondaryText">Premium Properties</span>
             </div>
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={50} end={90} duration={2} />
+                <CountUp start={50} end={90} duration={3} />
                 <span>+</span>
               </span>
               <span className="secondaryText">Happy Customers</span>
@@ -46,7 +54,7 @@ function Extra() {
 
             <div className="flexColCenter stat">
               <span>
-                <CountUp start={10} end={25} duration={2} />
+                <CountUp start={10} end={25} duration={3} />
                 <span>+</span>
               </span>
               <span className="secondaryText">Award Winnning</span>
@@ -54,9 +62,14 @@ function Extra() {
           </div>
         </div>
         <div className="flexCenter extra-right">
-          <div className="image-container">
+          <motion.div
+            initial={{ x: "7rem", opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 4, tyep: "ease-in" }}
+            className="image-container"
+          >
             <img src="download2.jpg" alt="main image" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
